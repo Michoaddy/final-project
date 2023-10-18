@@ -34,7 +34,7 @@ app.get('*', (req, res) => {
   const indexFilePath = path.join(publicFolder, 'index.html');
   res.sendFile(indexFilePath);
 });
-
+ 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log('listening on port ' + PORT);
